@@ -34,7 +34,7 @@ By adding a hysteresis loop
 --weight_thres 0.1
 ```
 the training can be stabilized to a large degree. The hysteresis loop for weights is shown as below:
-<img src="hysteresis loop.png" width="200">
+<img src="hysteresis loop.png" width="600">
 
 
 # Feature map quantization
@@ -49,7 +49,7 @@ By introducing PACT activation the clipping threshold applied on feature maps ca
 Validation accuracy of CIFAR-10 dataset using a quantized ResNet-20 network (1-bit weights and 2-bit feature maps)
 <img src="Quantized ResNet20.png" width="300">
 
-
+For more details please contact wxwang0104@gmail.com
 
 
 

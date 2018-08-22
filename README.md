@@ -7,6 +7,6 @@ Deep CNNs for classification and object detection take large stoarge space and c
 
 The original weights (32-bit FloatTensor) are quantized to 1-bit representation. Moreover, by multiplying a scaling factor of full precision with kernels in each layer, the solution space involve from point space to line space. 
 
-<img src="weight.png" width="500">
+<img src="weight.png" width="300">
 
 

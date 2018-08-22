@@ -22,6 +22,7 @@ python3.6 CIFAR_MAIN.py --lr 0.1 --epoch 200 --print_freq 100 --log_file logs/lo
 The original weights (32-bit FloatTensor) are quantized to 1-bit representation. Moreover, by multiplying a scaling factor of full precision with kernels in each layer, the solution space involves from point space to line space. 
 
 <img src="weight.png" width="600">
+Left: weight distribution in full precision. Right: new weight distribution in 1-bit quantization. 
 
 By adding the flag
 ```

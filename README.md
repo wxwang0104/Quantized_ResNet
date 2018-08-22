@@ -21,7 +21,7 @@ python3.6 CIFAR_MAIN.py --lr 0.1 --epoch 200 --print_freq 100 --log_file logs/lo
 
 The original weights (32-bit FloatTensor) are quantized to 1-bit representation. Moreover, by multiplying a scaling factor of full precision with kernels in each layer, the solution space involves from point space to line space. 
 
-<img src="weight.png" width="600">
+<img src="weight.png" width="250">
 
 By adding the flag
 ```
@@ -47,7 +47,7 @@ By introducing PACT activation the clipping threshold applied on feature maps ca
 # Validation accuracy (baseline)
 
 Validation accuracy of CIFAR-10 dataset using a quantized ResNet-20 network (1-bit weights and 2-bit feature maps)
-<img src="Quantized ResNet20.png" width="300">
+<img src="Quantized ResNet20.png" width="600">
 
 For more details please contact wxwang0104@gmail.com
 

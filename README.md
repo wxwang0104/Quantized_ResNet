@@ -21,7 +21,7 @@ python3.6 CIFAR_MAIN.py --lr 0.1 --epoch 200 --print_freq 100 --log_file logs/lo
 
 The original weights (32-bit FloatTensor) are quantized to 1-bit representation. Moreover, by multiplying a scaling factor of full precision with kernels in each layer, the solution space involves from point space to line space. 
 
-<img src="weight.png" width="400">
+<img src="weight.png" width="600">
 
 By adding the flag
 ```
@@ -34,13 +34,21 @@ By adding a hysteresis loop
 --weight_thres 0.1
 ```
 the training can be stabilized to a large degree. The hysteresis loop for weights is shown as below:
-<img src="hysteresis loop.png" width="400">
+<img src="hysteresis loop.png" width="200">
 
 
 # Feature map quantization
 
 The original feature maps (32-bit Float Tensor) are quantized to 2-bit representation: 
-<img src="act.png" width="600">
+<img src="act.png" width="300">
+
+By introducing PACT activation the clipping threshold applied on feature maps can be trained. More details can be found in models/resent_cifar_pact.py
+
+# Validation accuracy (baseline)
+
+Validation accuracy of CIFAR-10 dataset using a quantized ResNet-20 network (1-bit weights and 2-bit feature maps)
+<img src="Quantized ResNet20.png" width="300">
+
 
 
 

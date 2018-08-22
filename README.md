@@ -21,7 +21,7 @@ python3.6 CIFAR_MAIN.py --lr 0.1 --epoch 200 --print_freq 100 --log_file logs/lo
 
 The original weights (32-bit FloatTensor) are quantized to 1-bit representation. Moreover, by multiplying a scaling factor of full precision with kernels in each layer, the solution space involves from point space to line space. 
 
-<img src="weight.png" width="250">
+<img src="weight.png" width="600">
 
 By adding the flag
 ```
@@ -34,7 +34,7 @@ By adding a hysteresis loop
 --weight_thres 0.1
 ```
 the training can be stabilized to a large degree. The hysteresis loop for weights is shown as below:
-<img src="hysteresis loop.png" width="600">
+<img src="hysteresis loop.png" width="250">
 
 
 # Feature map quantization

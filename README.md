@@ -43,7 +43,7 @@ the training can be stabilized to a large degree. The hysteresis loop for weight
 The original feature maps (32-bit Float Tensor) are quantized to 2-bit representation: 
 <img src="act.png" width="300">
 
-By introducing PACT activation the clipping threshold applied on feature maps can be trained. More details can be found in models/resent_cifar_pact.py
+By introducing PACT activation, the clipping threshold applied on feature maps can be trained. More details can be found in models/resent_cifar_pact.py
 
 # Validation accuracy (baseline)
 

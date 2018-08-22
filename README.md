@@ -1,7 +1,7 @@
 # Quantized_ResNet
 This repo is an implementation of quantized CNN for both weights (1-bit compression) and feature maps (2-bit compression) using Pytorch framework. 
 
-Deep CNNs for classification and object detection take large stoarge space and computational cost. By quantizing the weight kernel and feature maps to low-bit representation, the storage space can be decreased to a large degree. At the same time bitwise operation can be much faster than float operation. Both problems can be solved in deep CNN. 
+Deep CNNs for classification and object detection take large storage space and computational cost. By quantizing the weight kernel and feature maps to low-bit representation, the storage space can be decreased to a large degree. At the same time bitwise operation can be much faster than float operation. Both problems can be solved in deep CNN. 
 
 To train a highly compressed deep CNN (1-bit convolutional kernels and 2-bit feature maps), by the script:
 ```
